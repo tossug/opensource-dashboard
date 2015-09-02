@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Get package version information in different Linux distribution",
   "scripts": {
-    "prepublish": "gulp prepublish"
+    "prepublish": "gulp prepublish",
+    "test": "mocha && jshint --reporter=node_modules/jshint-stylish src test gulpfile.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,11 @@
   "author": "ChangZhuo Chen (陳昌倬) <czchen@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel": "^5.8.23",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1"
+    "gulp-babel": "^5.2.1",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.3.0"
   }
 }

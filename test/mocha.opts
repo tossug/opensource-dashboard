@@ -1,0 +1,5 @@
+--colors
+--compilers js:./test/compiler.js
+--growl
+--recursive
+--reporter spec
