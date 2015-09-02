@@ -1,0 +1,11 @@
+{
+    "name": "opensource-dashboard",
+    "version": "0.0.0",
+    "description": "Get package version information in different Linux distribution",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tossug/opensource-dashboard"
+    },
+    "author": "ChangZhuo Chen (陳昌倬) <czchen@gmail.com>",
+    "license": "MIT"
+}
