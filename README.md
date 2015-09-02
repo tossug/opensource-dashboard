@@ -1,6 +1,8 @@
 # Open Source Dashboard
 [![Build Status](https://travis-ci.org/tossug/opensource-dashboard.svg?branch=master)](https://travis-ci.org/tossug/opensource-dashboard)
 [![Coverage Status](https://coveralls.io/repos/tossug/opensource-dashboard/badge.svg?branch=master&service=github)](https://coveralls.io/github/tossug/opensource-dashboard?branch=master)
+[![dependency status](https://david-dm.org/tossug/opensource-dashboard.js.svg)](https://david-dm.org/tossug/opensource-dashboard)
+[![devDependency status](https://david-dm.org/tossug/opensource-dashboard.js/dev-status.svg)](https://david-dm.org/tossug/opensource-dashboard#info=devDependencies)
 
 整理台灣相關 Open Source 在各個 Linux Distribution 的狀態。
 
