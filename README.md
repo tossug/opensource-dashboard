@@ -2,6 +2,11 @@
 
 整理台灣相關 Open Source 在各個 Linux Distribution 的狀態。
 
+## Distribution API
+
+*   Debian
+    -   https://sources.debian.net/doc/api/
+
 ## Example
 
 ### 輸入法
