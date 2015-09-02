@@ -4,4 +4,5 @@ node_js:
     -   "0.12"
 
 after_success:
+    -   npm run test:coverage
     -   npm run test:coveralls
