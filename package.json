@@ -16,12 +16,19 @@
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
+    "chai": "^3.2.0",
     "coveralls": "^2.11.4",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "isparta": "^3.0.4",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.0.1",
-    "mocha": "^2.3.0"
+    "mocha": "^2.3.0",
+    "nock": "^2.10.0"
+  },
+  "dependencies": {
+    "http-status": "^0.2.0",
+    "immutable": "^3.7.4",
+    "request": "^2.61.0"
   }
 }
