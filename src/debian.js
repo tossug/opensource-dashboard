@@ -1,5 +1,5 @@
+import _ from 'prelude-ls';
 import HTTPStatus from 'http-status';
-import Immutable from 'immutable';
 import request from 'request';
 
 export const getPackageInformation = (pkg) => {
@@ -13,26 +13,22 @@ export const getPackageInformation = (pkg) => {
             try {
                 body = JSON.parse(body);
 
-                const ret = Immutable.fromJS(body)
-                    .get('versions')
-                    .flatMap((version) => {
-                        return version.get('suites').map((suite) => {
-                            return Immutable.fromJS({
-                                suite: suite,
-                                version: version.get('version'),
-                            });
-                        });
-                    })
-                    .reduce((r, t) => {
-                        r.suites[t.get('suite')] = {
-                            version: t.get('version'),
+                const ret = _.foldl((res, x) => {
+                    res.suites[x.suite] = {
+                        version: x.version,
+                    };
+                    return res;
+                }, {
+                    package: body.package,
+                    suites: {},
+                }, _.concatMap((version) => {
+                    return _.map((suite) => {
+                        return {
+                            suite: suite,
+                            version: version.version,
                         };
-
-                        return r;
-                    }, {
-                        package: body.package,
-                        suites: {},
-                    });
+                    }, version.suites);
+                }, body.versions));
 
                 return resolve(ret);
             } catch (e) {
