@@ -10,9 +10,13 @@ export const getPackageInformation = (rmadisonUrl, pkg) => {
                 package: pkg,
             },
         }, (error, rsp, body) => {
-            if (error) return reject(error);
+            if (error) {
+                return reject(error);
+            }
 
-            if (rsp.statusCode !== HTTPStatus.OK) return reject(new Error(`Got ${rsp.statusCode}`));
+            if (rsp.statusCode !== HTTPStatus.OK) {
+                return reject(new Error(`Got ${rsp.statusCode}`));
+            }
 
             let res = _.foldl((res, line) => {
                 let [pkg, version, suite, source] = _.map((x) => {
