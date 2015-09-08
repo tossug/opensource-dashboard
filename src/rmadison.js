@@ -23,7 +23,7 @@ export const getPackageInformation = (rmadisonUrl, pkg) => {
                     return res;
                 }
 
-                res.suite.unshift({
+                res.suites.unshift({
                     suite: suite,
                     version: version,
                 });
@@ -31,7 +31,7 @@ export const getPackageInformation = (rmadisonUrl, pkg) => {
                 return res;
             }, {
                 package: pkg,
-                suite: [],
+                suites: [],
             }, body.split('\n'));
 
             return resolve(res);

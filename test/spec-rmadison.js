@@ -28,7 +28,7 @@ describe('rmadison', () => {
             .then(res => {
                 assert.deepEqual(res, {
                     package: 'libchewing',
-                    suite: [
+                    suites: [
                         { suite: 'unstable', version: '0.4.0-3'},
                         { suite: 'testing', version: '0.4.0-3'},
                         { suite: 'stable-kfreebsd', version: '0.4.0-2'},
