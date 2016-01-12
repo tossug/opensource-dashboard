@@ -12,6 +12,9 @@
 *   Debian
     -   https://sources.debian.net/doc/api/
 
+*   Ubuntu
+    -   https://api.launchpad.net
+
 ## Example
 
 ### 輸入法
